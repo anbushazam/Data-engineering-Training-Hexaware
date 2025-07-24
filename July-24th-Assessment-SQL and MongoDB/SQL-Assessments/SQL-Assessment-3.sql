@@ -78,6 +78,12 @@ group by type;
  
  select*from Visits 
  where month(visit_date)=03
+
+ select p.name from visits v
+join pets p
+  on v.pet_id = p.pet_id
+group by p.name
+having count(*) > 1;
  
  /*Subqueries
  9. Show the pet(s) who had the costliest visit.
