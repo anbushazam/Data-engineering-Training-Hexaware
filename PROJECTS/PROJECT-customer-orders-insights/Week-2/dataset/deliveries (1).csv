@@ -1,0 +1,32 @@
+
+status_id,order_id,status,status_time,remarks
+1,1001,pending,2025-07-02 08:00:00,left warehouse
+2,1001,shipped,2025-07-03 09:30:00,departed warehouse
+3,1001,delivered,2025-07-05 14:15:00,signed by customer
+4,1002,pending,2025-07-04 10:00:00,order received
+5,1002,shipped,2025-07-05 11:00:00,picked up by carrier
+6,1002,delayed,2025-07-08 16:00:00,weather delay
+7,1003,pending,2025-07-06 07:45:00,order received
+8,1003,shipped,2025-07-07 12:20:00,in transit
+9,1003,delivered,2025-07-09 09:10:00,left at front door
+10,1004,pending,2025-07-08 08:30:00,order received
+11,1004,shipped,2025-07-09 10:05:00,in transit
+12,1004,delivered,2025-07-11 15:00:00,signature on file
+13,1005,pending,2025-07-11 09:00:00,order received
+14,1005,shipped,2025-07-12 13:45:00,departed depot
+15,1005,delayed,2025-07-18 18:20:00,customs hold
+16,1006,pending,2025-07-12 08:00:00,order received
+17,1006,shipped,2025-07-13 14:30:00,in transit
+18,1006,delivered,2025-07-14 11:00:00,delivered to neighbor
+19,1007,pending,2025-07-13 09:15:00,order received
+20,1007,shipped,2025-07-14 10:10:00,in transit
+21,1007,delayed,2025-07-20 17:50:00,route diversion
+22,1008,pending,2025-07-15 08:40:00,order received
+23,1008,shipped,2025-07-16 09:50:00,in transit
+24,1008,delivered,2025-07-17 14:25:00,left at reception
+25,1009,pending,2025-07-16 12:00:00,order received
+26,1009,shipped,2025-07-17 11:30:00,in transit
+27,1009,delivered,2025-07-19 13:00:00,signed by recipient
+28,1010,pending,2025-07-17 07:30:00,order received
+29,1010,shipped,2025-07-18 15:20:00,in transit
+30,1010,delivered,2025-07-19 16:45:00,package left at doorstep
