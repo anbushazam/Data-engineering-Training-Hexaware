@@ -1,0 +1,6 @@
+,customer_id,name,email,phone,address
+0,1,Alice Johnson,alice.johnson@example.com,555-0101,"123 Maple St, Springfield, IL, Midwest"
+1,2,Bob Smith,bob.smith@example.com,555-0202,"456 Oak St, Orlando, FL, Southeast"
+2,3,Carol Lee,carol.lee@example.com,555-0303,"789 Pine St, Seattle, WA, Northwest"
+3,4,David Patel,david.patel@example.com,555-0404,"101 Birch St, Boston, MA, Northeast"
+4,5,Eva Wang,eva.wang@example.com,555-0505,"202 Cedar St, Phoenix, AZ, Southwest "

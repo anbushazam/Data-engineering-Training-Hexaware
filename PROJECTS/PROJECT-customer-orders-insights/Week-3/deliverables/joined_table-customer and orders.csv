@@ -1,0 +1,31 @@
+_c0,order_id,customer_id,status_id,order_date,delivery_date,status,name,total_amount,email,phone,status_time,address,remarks,region
+0,1001,1,1,2025-07-01,2025-07-03,pending,Alice Johnson,120.5,alice.johnson@example.com,555-0101,2025-07-02T08:00:00.000Z,"123 Maple St, Springfield, IL, Midwest",left warehouse,Midwest
+0,1001,1,2,2025-07-01,2025-07-03,shipped,Alice Johnson,120.5,alice.johnson@example.com,555-0101,2025-07-03T09:30:00.000Z,"123 Maple St, Springfield, IL, Midwest",departed warehouse,Midwest
+0,1001,1,3,2025-07-01,2025-07-03,delivered,Alice Johnson,120.5,alice.johnson@example.com,555-0101,2025-07-05T14:15:00.000Z,"123 Maple St, Springfield, IL, Midwest",signed by customer,Midwest
+1,1002,2,4,2025-07-03,2025-07-05,pending,Bob Smith,75.0,bob.smith@example.com,555-0202,2025-07-04T10:00:00.000Z,"456 Oak St, Orlando, FL, Southeast",order received,Southeast
+1,1002,2,5,2025-07-03,2025-07-05,shipped,Bob Smith,75.0,bob.smith@example.com,555-0202,2025-07-05T11:00:00.000Z,"456 Oak St, Orlando, FL, Southeast",picked up by carrier,Southeast
+1,1002,2,6,2025-07-03,2025-07-05,delayed,Bob Smith,75.0,bob.smith@example.com,555-0202,2025-07-08T16:00:00.000Z,"456 Oak St, Orlando, FL, Southeast",weather delay,Southeast
+2,1003,3,7,2025-07-05,2025-07-07,pending,Carol Lee,200.0,carol.lee@example.com,555-0303,2025-07-06T07:45:00.000Z,"789 Pine St, Seattle, WA, Northwest",order received,Northwest
+2,1003,3,8,2025-07-05,2025-07-07,shipped,Carol Lee,200.0,carol.lee@example.com,555-0303,2025-07-07T12:20:00.000Z,"789 Pine St, Seattle, WA, Northwest",in transit,Northwest
+2,1003,3,9,2025-07-05,2025-07-07,delivered,Carol Lee,200.0,carol.lee@example.com,555-0303,2025-07-09T09:10:00.000Z,"789 Pine St, Seattle, WA, Northwest",left at front door,Northwest
+3,1004,1,10,2025-07-07,2025-07-09,pending,Alice Johnson,50.0,alice.johnson@example.com,555-0101,2025-07-08T08:30:00.000Z,"123 Maple St, Springfield, IL, Midwest",order received,Midwest
+3,1004,1,11,2025-07-07,2025-07-09,shipped,Alice Johnson,50.0,alice.johnson@example.com,555-0101,2025-07-09T10:05:00.000Z,"123 Maple St, Springfield, IL, Midwest",in transit,Midwest
+3,1004,1,12,2025-07-07,2025-07-09,delivered,Alice Johnson,50.0,alice.johnson@example.com,555-0101,2025-07-11T15:00:00.000Z,"123 Maple St, Springfield, IL, Midwest",signature on file,Midwest
+4,1005,4,13,2025-07-10,2025-07-12,pending,David Patel,315.75,david.patel@example.com,555-0404,2025-07-11T09:00:00.000Z,"101 Birch St, Boston, MA, Northeast",order received,Northeast
+4,1005,4,14,2025-07-10,2025-07-12,shipped,David Patel,315.75,david.patel@example.com,555-0404,2025-07-12T13:45:00.000Z,"101 Birch St, Boston, MA, Northeast",departed depot,Northeast
+4,1005,4,15,2025-07-10,2025-07-12,delayed,David Patel,315.75,david.patel@example.com,555-0404,2025-07-18T18:20:00.000Z,"101 Birch St, Boston, MA, Northeast",customs hold,Northeast
+5,1006,2,16,2025-07-11,2025-07-13,pending,Bob Smith,99.99,bob.smith@example.com,555-0202,2025-07-12T08:00:00.000Z,"456 Oak St, Orlando, FL, Southeast",order received,Southeast
+5,1006,2,17,2025-07-11,2025-07-13,shipped,Bob Smith,99.99,bob.smith@example.com,555-0202,2025-07-13T14:30:00.000Z,"456 Oak St, Orlando, FL, Southeast",in transit,Southeast
+5,1006,2,18,2025-07-11,2025-07-13,delivered,Bob Smith,99.99,bob.smith@example.com,555-0202,2025-07-14T11:00:00.000Z,"456 Oak St, Orlando, FL, Southeast",delivered to neighbor,Southeast
+6,1007,5,19,2025-07-12,2025-07-14,pending,Eva Wang,150.0,eva.wang@example.com,555-0505,2025-07-13T09:15:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",order received,Southwest
+6,1007,5,20,2025-07-12,2025-07-14,shipped,Eva Wang,150.0,eva.wang@example.com,555-0505,2025-07-14T10:10:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",in transit,Southwest
+6,1007,5,21,2025-07-12,2025-07-14,delayed,Eva Wang,150.0,eva.wang@example.com,555-0505,2025-07-20T17:50:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",route diversion,Southwest
+7,1008,3,22,2025-07-14,2025-07-16,pending,Carol Lee,65.25,carol.lee@example.com,555-0303,2025-07-15T08:40:00.000Z,"789 Pine St, Seattle, WA, Northwest",order received,Northwest
+7,1008,3,23,2025-07-14,2025-07-16,shipped,Carol Lee,65.25,carol.lee@example.com,555-0303,2025-07-16T09:50:00.000Z,"789 Pine St, Seattle, WA, Northwest",in transit,Northwest
+7,1008,3,24,2025-07-14,2025-07-16,delivered,Carol Lee,65.25,carol.lee@example.com,555-0303,2025-07-17T14:25:00.000Z,"789 Pine St, Seattle, WA, Northwest",left at reception,Northwest
+8,1009,4,25,2025-07-15,2025-07-17,pending,David Patel,230.0,david.patel@example.com,555-0404,2025-07-16T12:00:00.000Z,"101 Birch St, Boston, MA, Northeast",order received,Northeast
+8,1009,4,26,2025-07-15,2025-07-17,shipped,David Patel,230.0,david.patel@example.com,555-0404,2025-07-17T11:30:00.000Z,"101 Birch St, Boston, MA, Northeast",in transit,Northeast
+8,1009,4,27,2025-07-15,2025-07-17,delivered,David Patel,230.0,david.patel@example.com,555-0404,2025-07-19T13:00:00.000Z,"101 Birch St, Boston, MA, Northeast",signed by recipient,Northeast
+9,1010,5,28,2025-07-16,2025-07-18,pending,Eva Wang,45.0,eva.wang@example.com,555-0505,2025-07-17T07:30:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",order received,Southwest
+9,1010,5,29,2025-07-16,2025-07-18,shipped,Eva Wang,45.0,eva.wang@example.com,555-0505,2025-07-18T15:20:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",in transit,Southwest
+9,1010,5,30,2025-07-16,2025-07-18,delivered,Eva Wang,45.0,eva.wang@example.com,555-0505,2025-07-19T16:45:00.000Z,"202 Cedar St, Phoenix, AZ, Southwest",package left at doorstep,Southwest
