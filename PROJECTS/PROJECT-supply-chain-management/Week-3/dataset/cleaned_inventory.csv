@@ -1,0 +1,11 @@
+item_id,supplier_id,stock_level,reorder_threshold,reordering status
+1,1,250,50,NO
+2,1,45,20,NO
+3,2,0,30,Reordering needed
+4,3,500,100,NO
+5,4,10,10,NO
+6,5,5,10,Reordering needed
+7,2,200,25,NO
+8,3,75,15,NO
+9,4,0,5,Reordering needed
+10,5,120,30,NO
