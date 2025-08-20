@@ -1,0 +1,44 @@
+ 1.What is Apache Airflow, and how does it work?
+
+Apache Airflow is an open-source workflow orchestration platform that defines, schedules, and monitors complex data pipelines. Users codify workflows as Directed Acyclic Graphs (DAGs), where each node is a task (e.g., PythonOperator, BashOperator). The Airflow scheduler reads DAG definitions, triggers tasks at the right time or in response to events, and hands off execution to executors (e.g., LocalExecutor, CeleryExecutor). The UI provides real-time visibility into task status, logs, and dependencies.
+
+ 2.Where does Airflow fit in modern data engineering workflows?
+
+In a typical modern data stack, Airflow sits at the heart of orchestration:
+- It schedules batch and incremental ETL jobs.
+- It integrates with data lakes, warehouses, and messaging systems.
+- It enforces data quality gates, triggers downstream deliveries, and manages retries on failure.
+- It centralizes observability, replacing ad-hoc cron scripts with a unified platform
+
+
+ 3.How is Airflow different from traditional schedulers or other tools like
+ Prefect or Luigi?
+
+- Unlike cron, which only schedules isolated shell commands on a fixed cadence, Airflow:
+- Knows task dependencies and can fan-in/fan-out.
+- Provides automatic retries, SLA enforcement, and email/slack alerts.
+- Compared with Prefect and Luigi:
+- Airflow has a mature UI and large community of providers.
+- Prefect uses a “flow” API with dynamic task mapping; Airflow introduced similar features later.
+- Luigi is simpler but lacks Airflow’s pluggable executor options and first-class Airflow ecosystem integrations
+
+
+ 4.What are the key components (e.g., DAGs, operators, scheduler, executor) and
+ how do they interact?
+
+- DAG: Python script that defines task graph and metadata (schedule, default_args).
+- Scheduler: Parses DAGs, determines which tasks to run, and queues them.
+- Executor: Picks up queued tasks and runs them (locally or distributed).
+- Operators/Sensors: Prebuilt task templates for Python, Bash, HTTP, S3, etc.
+- XCom: Lightweight inter-task messaging for sharing small datasets.
+- Metadata Database: Stores DAG definitions, task states, and histories.
+- Web UI: Visualizes DAG runs, task logs, and offers manual triggers
+
+
+ 5.Based on your learning, where do you see Airflow being useful in real-time
+ enterprise or product scenarios?
+
+- Data Quality Audits: Kick off validation DAGs when new files land in cloud storage.
+- ML Model Pipelines: Orchestrate feature computation, training jobs, and model deployment steps.
+- Ad-Hoc Reporting: Manual triggers with parameterized DAGs for one-off data exploration.
+- Cross-Team Orchestration: Teams publish DAGs for shared infrastructure tasks, ensuring governance and audit trails.

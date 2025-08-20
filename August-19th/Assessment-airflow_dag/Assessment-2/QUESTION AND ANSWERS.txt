@@ -1,0 +1,31 @@
+1. What is the role of DAGs in monitoring and auditing pipelines?
+
+Directed acyclic graphs (DAGs) in Airflow define task dependencies, execution order, and metadata (start date, retries, alerts). They centralize pipeline logic, enabling:
+- Automated scheduling and retries on failure.
+- Unified logging and status tracking through the UI.
+- SLA enforcement and alerting when tasks miss thresholds.
+This structure makes audits repeatable and observable without ad hoc scripts.
+
+ 2.How can Airflow be adapted for event-driven workflows (e.g., reacting to
+ external changes)?
+
+Airflow can shift from pure time-based to event-driven orchestration via:
+- Sensors (e.g., FileSensor, S3KeySensor) that pause until an external file or message arrives.
+- Deferrable operators that efficiently wait on Kubernetes, HTTP webhooks, or message queues.
+- TriggerDagRunOperator or REST API endpoints that programmatically launch DAGs in response to external events (database changes, Kafka topics).
+
+
+3. Compare Airflow with cron-based scripting, with at least 2 advantages.
+
+- Dependency Management
+Cron fires isolated jobs; Airflow encodes inter-task dependencies, preventing race conditions and enabling parallelism.
+- Observability & Alerts
+Cron logs to syslog or flat files. Airflow ships with a web UI, real-time logs, SLA monitoring, and built-in email/slack alerts on failures.
+
+ 4.How can Airflow be integrated with external logging/alerting systems?
+
+- Configure custom Python logging handlers (ELK, Splunk, Datadog) via airflow.cfg or environment variables.
+- Use on_failure_callback in PythonOperators to fire HTTP or Slack webhook calls.
+- Leverage community providers (e.g., airflow.providers.slack) to push task-level alerts directly from DAG definitions.
+
+
