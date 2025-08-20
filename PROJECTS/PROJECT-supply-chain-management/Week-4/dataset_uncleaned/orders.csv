@@ -1,0 +1,17 @@
+
+order_id,supplier_id,order_date,delivery_date,quantity,status
+1,1,2025-07-01,,100,pending
+2,2,2025-07-02,2025-07-06,200,fulfilled
+3,3,2025-07-03,,150,cancelled
+4,1,2025-07-05,2025-07-08,50,fulfilled
+5,4,2025-07-07,,75,pending
+6,5,2025-07-08,2025-07-15,20,fulfilled
+7,2,2025-07-10,2025-07-12,300,fulfilled
+8,3,2025-07-11,,50,pending
+9,4,2025-07-12,,100,cancelled
+10,5,2025-07-13,2025-07-14,60,fulfilled
+11,1,2025-07-14,,90,pending
+12,2,2025-07-15,2025-07-18,40,fulfilled
+13,3,2025-07-16,2025-07-20,30,fulfilled
+14,4,2025-07-17,,80,pending
+15,5,2025-07-18,,55,cancelled
