@@ -1,0 +1,10 @@
+order_id,region,revenue,cost,profit_margin,Categorized_segments
+1001,East,120000.0,80000,0.3333333333333333,platinum
+1002,West,80000.0,50000,0.375,Gold
+1003,Unknown,50000.0,30000,0.4,standard
+1004,North,0.0,20000,0.0,standard
+1005,South,20000.0,15000,0.25,standard
+1006,Unknown,0.0,10000,0.0,standard
+1007,East,150000.0,90000,0.4,platinum
+1008,West,30000.0,20000,0.3333333333333333,standard
+1009,South,70000.0,40000,0.42857142857142855,Gold
