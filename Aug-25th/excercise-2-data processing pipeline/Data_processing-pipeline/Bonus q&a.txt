@@ -1,0 +1,25 @@
+1. Why is data cleaning important in real-time data processing?
+
+Real-time pipelines ingest data continuously, so any “dirty” record (missing fields, wrong formats, outliers) instantly propagates downstream.
+- Junk data can break dashboards, trigger false alerts, or corrupt ML inferences
+- Unexpected formats often cause runtime errors or retries, adding latency
+- Cleaning at ingest enforces schema & business rules before data lands in storage
+By catching and standardizing anomalies up-front, you keep SLAs tight, reduce failure blast radius, and ensure trusted analytics for every incoming event.
+
+2. What are pipeline artifacts and how are they used in DevOps workflows?
+
+Pipeline artifacts are the files or packages your CI/CD process produces and hands off between stages.
+- Examples: compiled binaries, container images, test reports, configuration bundles
+- They enable traceability: you can link a deployed release back to the exact pipeline run
+- Artifacts let later jobs (e.g., deployment, security scan) consume exactly what was built
+In practice, you publish artifacts after a build or test stage, then download them in release stages—guaranteeing consistency from dev through production.
+
+
+3. How would you modify the pipeline to store the cleaned data into Azure Blob
+Storage?
+
+When you want your CI/CD pipeline to push cleaned datasets into Azure Blob Storage, you add a deployment stage centered on securely transferring pipeline artifacts. Conceptually, this involves:
+- Establishing credentials and connectivity
+- Packaging or identifying the cleaned output as an artifact
+- Executing an upload step in a dedicated deployment stage
+- Ensuring idempotency, error handling, and environment isolation

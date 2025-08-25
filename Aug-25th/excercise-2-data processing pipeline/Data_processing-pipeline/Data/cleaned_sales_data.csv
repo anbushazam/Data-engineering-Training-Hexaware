@@ -1,0 +1,7 @@
+transactionid,date,customerid,product,quantity,price,region
+1001,2025-01-05, C001,Widget A,10,25.50,North
+1002,2025-02-06,C002,Widget B,5,15.00,South
+1006,2025-01-09,C006,Widget D,3,40.00,North
+1007,2025-01-10,C007,Widget A,7,25.50,South
+1009,2025-01-12,C009,Widget C,4,35.00,West
+1010,2025-01-13,C010,Widget D,6,40.00,North
